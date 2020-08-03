@@ -1,6 +1,12 @@
 # TR-il-ilce-Semt-Mahalle__City-County-Street-Neighborhood-06.2020_Json
-Türkiye Bütün il,ilçe ve mahalleleri. 06.2020
+Türkiye Bütün il,ilçe,semt ve mahalleleri. 06.2020
 
+
+.Net Kullananlar İçin;
+StreamReader r = new StreamReader(@"TR-İl-İlçe-Mahalle_(City-County-Neighborhood).json");
+string json = r.ReadToEnd();
+List<il> allCities = JsonConvert.DeserializeObject<List<il>>(json);
+            
 
 Sql Hazır Tablo ve Veriler İçin;
 
